@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Document</title>
+</head>
+<body onload="init()">
+    <div id="container">
+    <div class="panel">
+<h2>  Important Years in Programming History   </h2>
+<h3> What year was HTML,  CSS,  C++,  C#,  JAVA,  JAVASCRIPT created??</h3><hr>
+<button onclick="newGame()">NEW GAME!</button>
+    </div>
+
+
+    <div class="panel">
+<h3 id="textOutPut"> Enter your guess below &amp; press enter</h3>
+<input type="number" id="inputBox" onchange="compareGuess()">
+<p>Number of previous attempts: <span id="attemps"></span></p>
+    </div>
+    <div class="panel">
+        <p>Your previous guesses:</p>
+        <p id="guessLog"></p>
+
+    </div>
+    </div>
+
+    <script src="game.js"></script>
+    </script>
+
+
+</body>
+</html>
